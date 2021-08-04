@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import { Text, View } from 'react-native';
 import { ButtonCalc } from '../components/ButtonCalc';
 import { styles } from '../theme/appTheme';
-import { useCalculadora } from '../hooks/useCalculadora';
+import { useCalculator } from '../hooks/useCalculator';
 
 
 export const CalculadoraScreen = () => {
@@ -19,7 +19,7 @@ export const CalculadoraScreen = () => {
         operation,
         number,
         secondNumber
-    } = useCalculadora()
+    } = useCalculator()
 
     return (
         <View style={styles.calculatorContainer}>

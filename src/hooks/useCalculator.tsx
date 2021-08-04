@@ -7,7 +7,7 @@ enum Operadores {
     divide
 };
 
-export const useCalculadora = () => {
+export const useCalculator = () => {
 
     const [secondNumber, setSecondNumber] = useState('0');
     const [number, setNumber] = useState('0');
